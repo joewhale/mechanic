@@ -6,6 +6,12 @@
   </head>
   <body>
     <h1>Mechanic Yelp Thing</h1>
-
+    <% @shops.each do |shop| %>
+      <div class="">
+        <h2><%= shop.name %></h2>
+        <i><%= shop.address %></i>
+        <p><%= shop.description %></p>
+      </div>
+    <% end %>
   </body>
 </html>
